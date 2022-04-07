@@ -3,7 +3,7 @@ data "terraform_remote_state" "vpc" {
   workspace = terraform.workspace
 
   config = {
-    bucket = "basic-bucket-terraform"
+    bucket = "{BUCKET_USED_TO_STORE_TERRAFORM_STATE}"
     region = "us-east-1"
     key    = "vpc/terraform.tfstate"
   }
